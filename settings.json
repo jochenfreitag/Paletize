@@ -1,0 +1,6 @@
+{
+    "intrinsic.googleCloud.projectList": [
+        "xfa-prod-metal-morph"
+    ],
+    "intrinsic.defaultSdkRepository": "https://github.com/intrinsic-dev/intrinsic_sdks"
+}

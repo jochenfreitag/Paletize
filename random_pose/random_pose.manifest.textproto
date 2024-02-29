@@ -1,0 +1,34 @@
+id {
+  package: "com.mycompany"
+  name: "random_pose"
+}
+display_name: "Unknown Skill"
+vendor {
+  display_name: "Unknown Vendor"
+}
+documentation {
+  description: "TODO: Describe what the skill does here."
+}
+options {
+  supports_cancellation: false
+  python_config {
+    skill_module: "random_pose.random_pose"
+    proto_module: "random_pose.random_pose_pb2"
+    create_skill: "random_pose.random_pose.RandomPose"
+  }
+}
+dependencies {
+  required_equipment {
+    key: "robot"
+    value {
+      capability_names: "Icon2Connection"
+      capability_names: "Icon2PositionPart"
+    }
+  }
+}
+parameter {
+  message_full_name: "com.mycompany.RandomPoseParams"
+  default_value {
+    type_url: "type.googleapis.com/com.mycompany.RandomPoseParams"
+  }
+}

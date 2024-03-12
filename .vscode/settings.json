@@ -2,5 +2,10 @@
     "intrinsic.googleCloud.projectList": [
         "xfa-prod-metal-morph"
     ],
-    "intrinsic.defaultSdkRepository": "https://github.com/intrinsic-dev/intrinsic_sdks"
+    "intrinsic.defaultSdkRepository": "https://github.com/intrinsic-dev/intrinsic_sdks",
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/compile_commands.json",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/tmp/vscode_intrinsic/f4cff8aa0392b1ca09322be6a6a23323/execroot/random_pose/external/llvm_toolchain/bin/cc_wrapper.sh"
+    ]
 }
